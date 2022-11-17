@@ -1,4 +1,38 @@
 
+<article class="teaser normal  format-standard" id="tease-2199859">
+	    
+            
+            
+                
+	<a href="https://news.artnet.com/art-world/a-climate-activist-just-superglued-his-head-to-vermeers-girl-with-a-pearl-earring-2199859" class="teaser-image" >
+		<div class="image-wrapper">
+			<img src="./images/Emotion of Myself 04 48x48 Acrylic on Canvas (1).JPG"
+				 width="256"
+				 height="256" />
+
+					</div>
+	</a>
+		<div class="teaser-info">
+		<h5 class="teaser-category h5">
+							<a href="https://news.artnet.com/art-world/politics" >Politics</a>
+											</h5>
+        <a href="https://news.artnet.com/art-world/a-climate-activist-just-superglued-his-head-to-vermeers-girl-with-a-pearl-earring-2199859" >
+			<h2 class="teaser-title h2">A Climate Activist Just Superglued His Head to Vermeer&#8217;s &#8216;Girl With a Pearl Earring&#8217;</h2>
+							<p class="teaser-blurb">The painting, which is displayed behind glass, is the jewel of the Mauritshuis collection in the Hague.</p>
+					</a>
+		<p class="teaser-byline">
+			By
+							<a href="https://news.artnet.com/about/sarah-cascone-25" >Sarah Cascone</a><!--
+		 --><!--
+		 --><time datetime="2022-10-27T17:08:56-04:00" title="Oct 27, 2022 1:08 PM">,
+							11 hours ago
+						</time>
+		</p>
+	</div>
+</article>   
+
+
+
 <article class="teaser normal  format-standard" id="tease-2199671">
 	    
             
