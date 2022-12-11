@@ -35,6 +35,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13
 !function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
 </script>
 <style type="text/css">
+   
 img.wp-smiley,
 img.emoji {
 	display: inline !important;
@@ -46,6 +47,7 @@ img.emoji {
 	vertical-align: -0.1em !important;
 	background: none !important;
 	padding: 0 !important;
+
 }
 </style>
 	<link rel='stylesheet' id='sbi_styles-css'  href='./sbi-styles.min.css' type='text/css' media='all' />
@@ -56,11 +58,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <link rel='stylesheet' id='leaky-bundle-css'  href='./leaky.css' type='text/css' media='all' />
 <link rel='stylesheet' id='artnet_news_css-css'  href='./artnet.css' type='text/css' media='all' />
 <link rel="preload" as="style" href="./article.css" media="all" type="text/css" onload="this.rel='stylesheet'"><link rel='stylesheet' id='sailthru-subscribe-widget-styles-css'  href='./widget.subscribe.css' type='text/css' media='all' />
-<script type='text/javascript' id='artnet_login_redirect-js-extra'>
-/* <![CDATA[ */
-var loginSettings = {"loginUrl":"https:\/\/news.artnet.com\/wp\/wp-login.php?redirect_to=https%3A%2F%2Fnews.artnet.com%2F","logoutUrl":"https:\/\/news.artnet.com\/wp\/wp-login.php?action=logout&redirect_to=https%3A%2F%2Fnews.artnet.com%2F&_wpnonce=14592cf83f&alreadyLoggedOutOfSSO=1","ssoLoggedInCookieName":"artnet_sso_logged_in","navSelector":"#nav-header-right","navSelectorMobile":"#nav-main","loginLinks":"<li><a href=\"https:\/\/news.artnet.com\/wp\/wp-login.php?redirect_to=https%3A%2F%2Fnews.artnet.com%2F\">Log In<\/a>","accountLinks":"<li><a href=\"https:\/\/news.artnet.com\/my-account\">My Account<\/a>"};
-/* ]]> */
-</script>
+
 <script type='text/javascript' src='./login-redirect.js' id='artnet_login_redirect-js'></script>
 <script type='text/javascript' src='./jquery.min.js' id='jquery-core-js'></script>
 <script type='text/javascript' src='./jquery-migrate.js' id='jquery-migrate-js'></script>
@@ -223,15 +221,15 @@ var loginSettings = {"loginUrl":"https:\/\/news.artnet.com\/wp\/wp-login.php?red
                     </div>
     </div>
 </div>
-    <header id="header" class="header container" style="height:190% !important">
-        <div class="logo-container" style=" margin:0px; padding:0px;">
-            <a class="logo-link" href="/" rel="home" style="width:10% !important ; margin:0px; padding:0px;">
-				<img src="./images/Hyperglot Review updated.png" alt="" style="width:100% !important ; height:120% !important; margin: 20%;" />
+    <header id="header" class="header container" style="display:flex;flex-direction: row;justify-content: center;align-items: center;flex-wrap: nowrap;">
+        <div  style=" margin:0px; padding:0px;width: 30%;">
+            <a class="logo-link" href="/" rel="home" style="width:35% !important ; margin:0px; padding:0px;">
+				<img src="./images/Hyperglot Review updated.png" alt="" style=" height:150% !important; margin-top: 20%; margin-bottom: 20%;" />
             </a>
         </div>
         <div class="main">
             <nav class="navbar navbar-artnet menu">
-                <div class="menu-header container-fluid" style="background-color: red;">
+                <div class="menu-header container-fluid" >
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="nav-header">
                         <button class="hamburger hamburger--squeeze navbar-toggle collapsed" type="button"
@@ -241,44 +239,7 @@ var loginSettings = {"loginUrl":"https:\/\/news.artnet.com\/wp\/wp-login.php?red
                             <span class="hamburger-inner"></span>
                           </span>
                         </button>
-                        <ul class="nav-right list-inline pull-right">
-                                                            <li class="follow-us dropdown hidden-sm hidden-xs">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: white ;font-weight:bold ;">
-                                        Follow Us
-                                    </a>
-                                    <div class="dropdown-menu">
-                                        <nav id="nav-header-social" class="nav-header" role="navigation">
-                                            <ul class="list-inline list-icons">
-		<li>
-		<a href="#" title="Facebook" target="_blank">
-			 
-			<span class="text" style="color:red ;">Facebook</span>
-		</a>
-			</li>
-		<li>
-		<a href="#" title="Instagram" target="_blank">
-			 
-			<span class="text" style="color:red ;">Instagram</span>
-		</a>
-			</li>
-		<li>
-		<a href="#" title="Twitter" target="_blank">
-			 
-			<span class="text" style="color:red ;">Twitter</span>
-		</a>
-			</li>
-			<li>
-		 
-			</li>
-	
-	</ul>
-                                        </nav>
-                                    </div>
-                                </li>
-                                                        <li>
-                  
-                            </li>
-                        </ul>
+                    
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -286,141 +247,157 @@ var loginSettings = {"loginUrl":"https:\/\/news.artnet.com\/wp\/wp-login.php?red
                         <nav id="nav-main" class="nav-main nav navbar-nav" role="navigation" >
                             <ul class="list-inline list-text" >
 								<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1962144">
-		<a href="./index.html" target="_self" style="color: white !important; font-weight: bolder   ; background: red;">Home</a>
+		<a href="./index.html" target="_self"  >Home</a>
 			</li>
 		<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530447 menu-item-has-children">
-					<a href="./art homepage .html" target="_self" style="color: white !important; font-weight: bolder   ; background: red;">Art</a>
+					<a href="./art homepage .html" target="_self"  >Art</a>
 				<ul class="list-unstyled">
 		<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1962144">
-		<a href="./Artist Amit Kumar Saha.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;"> Featured artists</a>
+		<a href="./Artist Amit Kumar Saha.html" target="_self" > Featured artists</a>
 			</li>
 		<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1962148">
-		<a href="./Artist Kuntal Dutta.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;">Spotlight</a>
+		<a href="./Artist Kuntal Dutta.html" target="_self" >Spotlight</a>
 			</li>
 		<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1964418">
-		<a href="./Artist Indira Halder.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;">Women Artist</a>
+		<a href="./Artist Indira Halder.html" target="_self" >Women Artist</a>
 			</li>
 		<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530456">
-		<a href="./Artist Dipankar Ray.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;">Emerging Artist</a>
+		<a href="./Artist Dipankar Ray.html" target="_self" >Emerging Artist</a>
 			</li>
 		<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530459">
-		<a href="./Artist Prolay Kundu.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;">News & Events</a>
+		<a href="./Artist Prolay Kundu.html" target="_self" >News & Events</a>
 			</li>
 	
 	</ul>
 	</li>
 		<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530432 menu-item-has-children">
-					<a href="./literature homepage.html" target="_self" style="color: white !important; font-weight: bolder   ; background: red;">  Literature</a>
+					<a href="./literature homepage.html" target="_self"  >  Literature</a>
 				<ul class="list-unstyled">
 		<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530441">
-		<a href="./book whatever_at_peru.html" target="_self" style="background-color:  white !important; font-weight: bolder   ; color: red;">Featured authors</a>
+		<a href="./book whatever_at_peru.html" target="_self"  >Featured authors</a>
 			</li>
 		<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1964414">
-		<a href="./book before coffe gets cold.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;">Spotlight</a>
+		<a href="./book before coffe gets cold.html" target="_self" >Spotlight</a>
 			</li>
 		<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530435">
-		<a href="./book ed yong.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;">Women authors</a>
+		<a href="./book ed yong.html" target="_self" >Women authors</a>
 			</li>
 		<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530438">
-		<a href="./book janice.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;">Emerging authors</a>
+		<a href="./book janice.html" target="_self" >Emerging authors</a>
 			</li>
 		<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530444">
-		<a href="./book big bang of number.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;">News & Events</a>
+		<a href="./book big bang of number.html" target="_self" >News & Events</a>
 			</li>
 		
 	</ul>
 	</li>
     <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530432 menu-item-has-children">
-        <a href="./science and tech.html" target="_self" style="color: white !important; font-weight: bolder   ; background: red;">  Science & Tech</a>
+        <a href="./science and tech.html" target="_self"  >  Science & Tech</a>
     <ul class="list-unstyled">
 <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530441">
-<a href="./Artist chandan das.html" target="_self" style="background-color:  white !important; font-weight: bolder   ; color: red;">Featured authors</a>
+<a href="./Artist chandan das.html" target="_self"  >Featured authors</a>
 </li>
 <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1964414">
-<a href="./Artist Indira Halder.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;">Spotlight</a>
+<a href="./Artist Indira Halder.html" target="_self" >Spotlight</a>
 </li>
 <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530435">
-<a href="./Artist Kuntal Dutta.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;">Women authors</a>
+<a href="./Artist Kuntal Dutta.html" target="_self" >Women authors</a>
 </li>
 <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530438">
-<a href="./Artist Prolay Kundu.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;">Emerging authors</a>
+<a href="./Artist Prolay Kundu.html" target="_self" >Emerging authors</a>
 </li>
 <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530444">
-<a href="./Artist Kuntal Dutta.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;">News & Events</a>
+<a href="./Artist Kuntal Dutta.html" target="_self" >News & Events</a>
 </li>
 	
 	</ul>
 	</li>
     <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530432 menu-item-has-children">
-        <a href="./pop culture.html" target="_self" style="color: white !important; font-weight: bolder   ; background: red;"> Pop Culture </a>
+        <a href="./pop culture.html" target="_self"  > Pop Culture </a>
     <ul class="list-unstyled">
 <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530441">
-<a href="./Artist chandan das.html" target="_self" style="background-color:  white !important; font-weight: bolder   ; color: red;">Featured authors</a>
+<a href="./Artist chandan das.html" target="_self"  >Featured authors</a>
 </li>
 <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1964414">
-<a href="./Artist Indira Halder.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;">Spotlight</a>
+<a href="./Artist Indira Halder.html" target="_self" >Spotlight</a>
 </li>
 <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530435">
-<a href="./Artist Kuntal Dutta.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;">Women authors</a>
+<a href="./Artist Kuntal Dutta.html" target="_self" >Women authors</a>
 </li>
 <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530438">
-<a href="./Artist Prolay Kundu.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;">Emerging authors</a>
+<a href="./Artist Prolay Kundu.html" target="_self" >Emerging authors</a>
 </li>
 <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530444">
-<a href="./Artist Kuntal Dutta.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;">News & Events</a>
-</li>
-	
-	</ul>
-	</li>
-		
-    <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530432 menu-item-has-children">
-        <a href="./travel.html" target="_self" style="color: white !important; font-weight: bolder   ; background: red;"> Travel</a>
-    <ul class="list-unstyled">
-<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530441">
-<a href="./Artist chandan das.html" target="_self" style="background-color:  white !important; font-weight: bolder   ; color: red;">Featured authors</a>
-</li>
-<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1964414">
-<a href="./Artist Indira Halder.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;">Spotlight</a>
-</li>
-<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530435">
-<a href="./Artist Kuntal Dutta.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;">Women authors</a>
-</li>
-<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530438">
-<a href="./Artist Prolay Kundu.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;">Emerging authors</a>
-</li>
-<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530444">
-<a href="./Artist Kuntal Dutta.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;">News & Events</a>
+<a href="./Artist Kuntal Dutta.html" target="_self" >News & Events</a>
 </li>
 	
 	</ul>
 	</li>
 		
     <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530432 menu-item-has-children">
-        <a href="./opinion.html" target="_self" style="color: white !important; font-weight: bolder   ; background: red;">Opinion</a>
+        <a href="./travel.html" target="_self"  > Travel</a>
     <ul class="list-unstyled">
 <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530441">
-<a href="./Artist chandan das.html" target="_self" style="background-color:  white !important; font-weight: bolder   ; color: red;">Featured authors</a>
+<a href="./Artist chandan das.html" target="_self"  >Featured authors</a>
 </li>
 <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1964414">
-<a href="./Artist Indira Halder.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;">Spotlight</a>
+<a href="./Artist Indira Halder.html" target="_self" >Spotlight</a>
 </li>
 <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530435">
-<a href="./Artist Kuntal Dutta.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;">Women authors</a>
+<a href="./Artist Kuntal Dutta.html" target="_self" >Women authors</a>
 </li>
 <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530438">
-<a href="./Artist Prolay Kundu.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;">Emerging authors</a>
+<a href="./Artist Prolay Kundu.html" target="_self" >Emerging authors</a>
 </li>
 <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530444">
-<a href="./Artist Kuntal Dutta.html" target="_self" style="color: white !important; font-weight: bolder   ; color: red !important;">News & Events</a>
+<a href="./Artist Kuntal Dutta.html" target="_self" >News & Events</a>
+</li>
+	
+	</ul>
+	</li>
+		
+    <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530432 menu-item-has-children">
+        <a href="./opinion.html" target="_self"  >Opinion</a>
+    <ul class="list-unstyled">
+<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530441">
+<a href="./Artist chandan das.html" target="_self"  >Featured authors</a>
+</li>
+<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1964414">
+<a href="./Artist Indira Halder.html" target="_self" >Spotlight</a>
+</li>
+<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530435">
+<a href="./Artist Kuntal Dutta.html" target="_self" >Women authors</a>
+</li>
+<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530438">
+<a href="./Artist Prolay Kundu.html" target="_self" >Emerging authors</a>
+</li>
+<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530444">
+<a href="./Artist Kuntal Dutta.html" target="_self" >News & Events</a>
 </li>
 	
 	</ul>
 	</li>
 	<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1965614 menu-item-has-children">
-		<a href="#" target="_self" style="color: white !important; font-weight: bolder   ; background: red;">About us</a>
+		<a href="#" target="_self"  >About us</a>
 			<ul class="list-unstyled">
 		</ul>
 			</li>
+            <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530432 menu-item-has-children">
+                <a href="./travel.html" target="_self"  > Follow Us</a>
+            <ul class="list-unstyled">
+        <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530441">
+        <a href="#" target="_self"  >Facebook</a>
+        </li>
+        <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1964414">
+        <a href="#" target="_self" >Instagram</a>
+        </li>
+        <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530435">
+        <a href="#" target="_self" >LinkedIn</a>
+        </li>
+       
+            
+            </ul>
+            </li>
 	
 	</ul>
     
@@ -457,17 +434,7 @@ var loginSettings = {"loginUrl":"https:\/\/news.artnet.com\/wp\/wp-login.php?red
 				 data-analytics='&#x7B;&quot;pageType&quot;&#x3A;&quot;Homepage&quot;,&quot;clientId&quot;&#x3A;&quot;CLIENT_ID&#x28;AMP_ECID_GOOGLE,,_ga&#x29;&quot;,&quot;registrationType&quot;&#x3A;&quot;Not&#x20;Signed&#x20;Up&quot;&#x7D;'
 				 data-ad-targeting='&#x5B;&#x7B;&quot;name&quot;&#x3A;&quot;environment&quot;,&quot;value&quot;&#x3A;&quot;production&quot;&#x7D;,&#x7B;&quot;name&quot;&#x3A;&quot;page&quot;,&quot;value&quot;&#x3A;&quot;Landing&quot;&#x7D;,&#x7B;&quot;name&quot;&#x3A;&quot;section&quot;,&quot;value&quot;&#x3A;&quot;Homepage&quot;&#x7D;,&#x7B;&quot;name&quot;&#x3A;&quot;day&quot;,&quot;value&quot;&#x3A;&quot;28&quot;&#x7D;,&#x7B;&quot;name&quot;&#x3A;&quot;author&quot;,&quot;value&quot;&#x3A;&quot;&quot;&#x7D;&#x5D;'>
 
-                 
-                 <div class="col-md-12">
-                    <div class="page-title" style="font-weight: bold; font-size: 3.1rem;">Art</div>
-                    <nav class="pages prev text-center">
-
-<div class="buttons">
-
-            
-</div>
-
-</nav>								</div>
+                 <h1 style="text-align:center ;font-weight: bold ; margin-bottom:1% ;">Art</h1>
 
 							<div class="container" style="width: 100% !important ;margin-left: 11.5% ;">
 			<div class="list-featured">
@@ -497,7 +464,7 @@ var loginSettings = {"loginUrl":"https:\/\/news.artnet.com\/wp\/wp-login.php?red
 			<h2 class="teaser-title h2"> <b>Featured Artist </b>&#8216;More Is More&#8217;: How the Artist Known as Machine Dazzle Layers Theater, Design, and Dance for a New &#8216;Rock &#8216;n&#8217; Roll Cabaret&#8217;</h2>
 							<p class="teaser-blurb">The multi-hyphenate has just released his first album, 'Treasure,' based on a 2019 musical theater work.</p>
 					</a>
-		<p class="teaser-byline">
+		<p class="teaser-byline" style="color: grey;">
 			
 							<!--
 		 --><!--
@@ -544,7 +511,7 @@ var loginSettings = {"loginUrl":"https:\/\/news.artnet.com\/wp\/wp-login.php?red
 			<h2 class="teaser-title h2">Soumen Basu</h2>
 							<p class="teaser-blurb">Beeple Studios is a bet that the future of digital art passes through physical display.</p>
 					</a>
-		<p class="teaser-byline">
+		<p class="teaser-byline" style="color: grey;">
 			By
 							<a href="https://news.artnet.com/about/dorian-batycka-19612" >Dorian Batycka</a><!--
 		 --><!--
@@ -579,7 +546,7 @@ var loginSettings = {"loginUrl":"https:\/\/news.artnet.com\/wp\/wp-login.php?red
                                     <h2 class="teaser-title h2">Prolay Kundu</h2>
                                                     <p class="teaser-blurb">The remains of the ship were found in Vaxholm, where it sunk in 1658.</p>
                                             </a>
-                                <p class="teaser-byline">
+                                <p class="teaser-byline" style="color: grey;">
                                     By
                                                     <a href="./Artist Prolay Kundu.html" >Vittoria Benzine</a><!--
                                  --><!--
@@ -614,7 +581,7 @@ var loginSettings = {"loginUrl":"https:\/\/news.artnet.com\/wp\/wp-login.php?red
 			<h2 class="teaser-title h2"> Kuntal Dutta</h2>
 							<p class="teaser-blurb">Now represented by Triple X, the artist is putting his technical and artistic skills to use in an expanding array of digital works.</p>
 					</a>
-		<p class="teaser-byline">
+		<p class="teaser-byline" style="color: grey;">
 			By
 							<a href="#" >Artnet Gallery Network</a><!--
 		 --><!--
@@ -649,7 +616,7 @@ var loginSettings = {"loginUrl":"https:\/\/news.artnet.com\/wp\/wp-login.php?red
 			<h2 class="teaser-title h2">Indira Halder</h2>
 							<p class="teaser-blurb">Since 2020, billionaire Ronald Perelman has been unloading assets ranging from fine art to a private jet.</p>
 					</a>
-		<p class="teaser-byline">
+		<p class="teaser-byline" style="color: grey;">
 			By
 							<!--
 		 --><!--
@@ -684,7 +651,7 @@ var loginSettings = {"loginUrl":"https:\/\/news.artnet.com\/wp\/wp-login.php?red
 			<h2 class="teaser-title h2">Sameer Saha</h2>
 							<p class="teaser-blurb">The dealer will present the Abstract Expressionist artist at the ADAA Art Show.</p>
 					</a>
-		<p class="teaser-byline">
+		<p class="teaser-byline" style="color: grey;">
 			By
 							<a href="#" >Sarah Cascone</a><!--
 		 --><!--
@@ -728,7 +695,7 @@ var loginSettings = {"loginUrl":"https:\/\/news.artnet.com\/wp\/wp-login.php?red
 			<h2 class="teaser-title h2">Dipankar Ray</h2>
 							<p class="teaser-blurb">The technology also can be used to help architects visualize the impact a new building might have on a cityscape.</p>
 					</a>
-		<p class="teaser-byline">
+		<p class="teaser-byline" style="color: grey;">
 			By
 							<a href="https://news.artnet.com/about/jo-lawson-tancred-14118" >Jo Lawson-Tancred</a><!--
 		 --><!--
@@ -761,7 +728,7 @@ var loginSettings = {"loginUrl":"https:\/\/news.artnet.com\/wp\/wp-login.php?red
 			<h2 class="teaser-title h2">Chandan Das</h2>
 							<p class="teaser-blurb">The technology also can be used to help architects visualize the impact a new building might have on a cityscape.</p>
 					</a>
-		<p class="teaser-byline">
+		<p class="teaser-byline" style="color: grey;">
 			By
 							<a href="https://news.artnet.com/about/jo-lawson-tancred-14118" >Jo Lawson-Tancred</a><!--
 		 --><!--

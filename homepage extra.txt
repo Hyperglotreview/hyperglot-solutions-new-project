@@ -20,7 +20,7 @@
 			<h2 class="teaser-title h2">A Climate Activist Just Superglued His Head to Vermeer&#8217;s &#8216;Girl With a Pearl Earring&#8217;</h2>
 							<p class="teaser-blurb">The painting, which is displayed behind glass, is the jewel of the Mauritshuis collection in the Hague.</p>
 					</a>
-		<p class="teaser-byline">
+		<p class="teaser-byline" style="color: grey;">
 			By
 							<a href="https://news.artnet.com/about/sarah-cascone-25" >Sarah Cascone</a><!--
 		 --><!--
@@ -54,7 +54,7 @@
 			<h2 class="teaser-title h2">&#8216;A Naked Lunge for a Twitter Storm&#8217;: Critics Pan British Comedian Jimmy Carr&#8217;s TV Show Where Art Is Destroyed Live on Air</h2>
 							<p class="teaser-blurb">One commentator called the program, which wanted to see if "problematic" artists can be separated from their art, a “surface-level exploration of what ‘cancellation’ means."</p>
 					</a>
-		<p class="teaser-byline">
+		<p class="teaser-byline" style="color: grey;">
 			By
 							<a href="https://news.artnet.com/about/jo-lawson-tancred-14118" >Jo Lawson-Tancred</a><!--
 		 --><!--
@@ -88,7 +88,7 @@
 			<h2 class="teaser-title h2">Christie’s Halts Its Auction of Nike Air Yeezy 1, the Most Expensive Shoes Ever, Amid the Ongoing Ye Controversy</h2>
 							<p class="teaser-blurb">“We are not selling any of this material nor do we have any plans to,” said a spokesperson for the auction house.</p>
 					</a>
-		<p class="teaser-byline">
+		<p class="teaser-byline" style="color: grey;">
 			By
 							<a href="https://news.artnet.com/about/dorian-batycka-19612" >Dorian Batycka</a><!--
 		 --><!--
@@ -122,7 +122,7 @@
 			<h2 class="teaser-title h2">Surface Magazine&#8217;s Parent Company Is Suing Ye for Missed Rental Payments on Its Miami Event Space</h2>
 							<p class="teaser-blurb">The rapper owes $145,813 in unpaid rent to design showroom Surface Area.</p>
 					</a>
-		<p class="teaser-byline">
+		<p class="teaser-byline" style="color: grey;">
 			By
 							<a href="https://news.artnet.com/about/vittoria-benzine-21460" >Vittoria Benzine</a><!--
 		 --><!--
@@ -156,7 +156,7 @@
 			<h2 class="teaser-title h2">Art Industry News: Climate Activists Can&#8217;t Agree on Whether Throwing Soup at Art Is the Best Strategy or Not + Other Stories</h2>
 							<p class="teaser-blurb">Plus, Sonia Boyce's Golden Lion-winning Venice installation heads to the U.K., and Macron is under fire for his gift to the Pope.</p>
 					</a>
-		<p class="teaser-byline">
+		<p class="teaser-byline" style="color: grey;">
 			By
 							<a href="https://news.artnet.com/about/artnet-news-39" >Artnet News</a><!--
 		 --><!--
@@ -190,7 +190,7 @@
 			<h2 class="teaser-title h2">Introducing: The Artnet Intelligence Report, Fall 2022 Edition</h2>
 							<p class="teaser-blurb">The new edition of the Artnet News Pro Intelligence Report explores how artists are gaining the upper hand in the fight against flippers.</p>
 					</a>
-		<p class="teaser-byline">
+		<p class="teaser-byline" style="color: grey;">
 			By
 							<a href="https://news.artnet.com/about/artnet-news-39" >Artnet News</a><!--
 		 --><!--
@@ -225,7 +225,7 @@
 			<h2 class="teaser-title h2">Download the Fall 2022 Artnet Intelligence Report Here</h2>
 							<p class="teaser-blurb">The insight-packed issue of the fall 2022 Artnet Intelligence Report is here—exclusively for Artnet News Pro members.</p>
 					</a>
-		<p class="teaser-byline">
+		<p class="teaser-byline" style="color: grey;">
 			By
 							<a href="https://news.artnet.com/about/artnet-news-39" >Artnet News</a><!--
 		 --><!--
@@ -260,7 +260,7 @@
 			<h2 class="teaser-title h2">Spotlight: A New Book Celebrates 40 Years of Portland&#8217;s Elizabeth Leach Gallery, With Cameos From Vito Acconci, Noah Davis, and More</h2>
 							<p class="teaser-blurb">The publication includes a richly illustrated chronology of exhibitions, artists, and growth over the decades.</p>
 					</a>
-		<p class="teaser-byline">
+		<p class="teaser-byline" style="color: grey;">
 			By
 							<a href="https://news.artnet.com/about/artnet-gallery-network-737" >Artnet Gallery Network</a><!--
 		 --><!--
@@ -294,7 +294,7 @@
 			<h2 class="teaser-title h2">I Make Art With A.I. Here&#8217;s Why All Artists Need to Stop Worrying and Embrace the Technology</h2>
 							<p class="teaser-blurb">Creators could have a hand in how the technology develops, directing its use in new mediums.</p>
 					</a>
-		<p class="teaser-byline">
+		<p class="teaser-byline" style="color: grey;">
 			By
 							<a href="https://news.artnet.com/about/agnieszka-pilat-26824" >Agnieszka Pilat</a><!--
 		 --><!--
