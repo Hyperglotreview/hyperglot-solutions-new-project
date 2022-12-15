@@ -231,6 +231,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
       margin: 0 10px;
       font-size: 13px;
     }
+    
   </style>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 				</head>
@@ -815,7 +816,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
     
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
+    
   </div>
 
 
@@ -1703,6 +1704,7 @@ var haslabel=document.getElementsByClassName(tgc).length;if(haslabel>0&&document
             margin-bottom: 60px;
         }
     }
+
 </style>
 <!-- note: avoiding the use of the word 'ad' or 'blocker' in case it would trigger any ad blockers -->
 <script id="artnetMarketingTemplate" type="text/html">
@@ -1884,6 +1886,34 @@ var ad_config = {"slots":[{"name":"Teads_inRead","path":"\/4408\/artnetnews\/Tea
           '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>',
         ]);
       });
+  </script>
+  <script>
+    var swiper1 = new Swiper1(".mySwiper1", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper1-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        "@0.75": {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        "@1.00": {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        "@1.50": {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      },
+    });
   </script>
         <!-- End Chartbeat -->
 

@@ -4,18 +4,12 @@
 <head>
   <meta charset="utf-8" />
   <title>Swiper demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
   <!-- Demo styles -->
   <style>
-    html,
-    body {
-      position: relative;
-      height: 100%;
-    }
-
     body {
       background: #eee;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -25,9 +19,10 @@
       padding: 0;
     }
 
-    .swiper-container {
+    .swiper {
       width: 100%;
-      height: 100%;
+      height: 300px;
+      margin: 20px auto;
     }
 
     .swiper-slide {
@@ -50,27 +45,13 @@
       align-items: center;
     }
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .swiper-container {
-      width: 100%;
-      height: 300px;
-      margin: 20px auto;
-    }
-
     .append-buttons {
       text-align: center;
       margin-top: 20px;
     }
 
-    .append-buttons button {
+    .append-buttons a {
       display: inline-block;
-      cursor: pointer;
       border: 1px solid #007aff;
       color: #007aff;
       text-decoration: none;
@@ -84,65 +65,30 @@
 
 <body>
   <!-- Swiper -->
-
-  <div #swiperRef="" class="swiper-container mySwiper" style="margin-top: 15%;">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div>
-            <div class="cardimage">
-                <img src="./images/Ceramic.jpg " 
-				Style="width:100% !important;height:100% !important;"/>
-            </div>
-            <div class="cardtext">
-                <h5 class="teaser-category h5">
-                    <a href="#"style="color:red;" >Politics</a>
-                                    </h5>
-<a href="#" >
-    <h2 class="teaser-title h2">The U.K. Is on Its Third Prime Minister in Seven Weeks. Here’s What the Art Market Believes Rishi Sunak Needs to Prioritize</h2>
-                    <p class="teaser-blurb">While the art industry is unlikely to be an immediate priority, sympathetic policies could help encourage growth in the wider economy.</p>
-            </a>
-<p class="teaser-byline" style="color: grey;" style="color: grey;">
-
-            </div>
-        </div>
-
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-    </div>
+  <div class="swiper">
+    <div class="swiper-wrapper"></div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
   </div>
-
-
+  <p class="append-buttons">
+    <a href="#" class="prepend-2-slides">Prepend 2 Slides</a>
+    <a href="#" class="slide-1">Slide 1</a>
+    <a href="#" class="slide-250">Slide 250</a>
+    <a href="#" class="slide-500">Slide 500</a>
+    <a href="#" class="append-slide">Append Slide</a>
+  </p>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper('.mySwiper', {
+    let appendNumber = 600;
+    let prependNumber = 1;
+    const swiper = new Swiper('.swiper', {
       slidesPerView: 3,
       centeredSlides: true,
       spaceBetween: 30,
@@ -154,43 +100,53 @@
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+      virtual: {
+        slides: (function () {
+          const slides = [];
+          for (var i = 0; i < 600; i += 1) {
+            slides.push('Slide ' + (i + 1));
+          }
+          return slides;
+        })(),
+      },
     });
 
-    var appendNumber = 4;
-    var prependNumber = 1;
+    document
+      .querySelector('.slide-1')
+      .addEventListener('click', function (e) {
+        e.preventDefault();
+        swiper.slideTo(0, 0);
+      });
+
+    document
+      .querySelector('.slide-250')
+      .addEventListener('click', function (e) {
+        e.preventDefault();
+        swiper.slideTo(249, 0);
+      });
+
+    document
+      .querySelector('.slide-500')
+      .addEventListener('click', function (e) {
+        e.preventDefault();
+        swiper.slideTo(499, 0);
+      });
+
     document
       .querySelector('.prepend-2-slides')
       .addEventListener('click', function (e) {
         e.preventDefault();
-        swiper.prependSlide([
-          '<div class="swiper-slide">Slide ' + --prependNumber + '</div>',
-          '<div class="swiper-slide">Slide ' + --prependNumber + '</div>',
+        swiper.virtual.prependSlide([
+          'Slide ' + --prependNumber,
+          'Slide ' + --prependNumber,
         ]);
       });
-    document
-      .querySelector('.prepend-slide')
-      .addEventListener('click', function (e) {
-        e.preventDefault();
-        swiper.prependSlide(
-          '<div class="swiper-slide">Slide ' + --prependNumber + '</div>'
-        );
-      });
+
     document
       .querySelector('.append-slide')
       .addEventListener('click', function (e) {
         e.preventDefault();
-        swiper.appendSlide(
-          '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>'
-        );
-      });
-    document
-      .querySelector('.append-2-slides')
-      .addEventListener('click', function (e) {
-        e.preventDefault();
-        swiper.appendSlide([
-          '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>',
-          '<div class="swiper-slide">Slide ' + ++appendNumber + '</div>',
-        ]);
+        swiper.virtual.appendSlide('Slide ' + ++appendNumber);
       });
   </script>
 </body>
