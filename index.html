@@ -210,10 +210,16 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
     }
 
     .swiper-container {
-      width: 100%;
+      width: 105%;
       height: 300px;
-      margin: 20px auto;
+      margin: 15px;
     }
+
+    .swiper-container1 {
+        width: 70%;
+        height: 100%;
+        margin: 5px;
+      }
 
     .append-buttons {
       text-align: center;
@@ -230,6 +236,18 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
       border-radius: 4px;
       margin: 0 10px;
       font-size: 13px;
+    }
+    body{
+          overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+    .swiper-button-next{
+        margin-right: 45%;
+        margin-top: 35% !important;
+    }
+    
+    .swiper-button-prev{
+        margin-left: 45%;
+        margin-top: 35% !important;
     }
     
   </style>
@@ -829,7 +847,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
   <div style="margin-left: 10%;margin-right: 10%;webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font: 400 48px/1.17 EB Garamond,Georgia,Times New Roman,serif;
-  line-height: 1.5;font-size: 3.2rem;margin-top: 3%;margin-bottom: ;">
+  line-height: 1.5;font-size: 3.2rem;margin-top: 20% !important;margin-bottom: 3%;">
   <h1 style="font-weight: bold;">Heading</h1>
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus natus consequuntur laborum autem, a velit veniam magni cupiditate quasi libero modi ipsa commodi explicabo rerum soluta optio animi iste. Similique aliquid ex, atque eius itaque vel quos hic debitis quas pariatur nihil est ducimus ipsum in et harum, quasi recusandae. Iste quaerat ut corporis, in et assumenda eius non minima magni error dolorum quia conse
   </div>
@@ -840,20 +858,20 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
 
 
-  <div #swiperRef="" class="swiper-container mySwiper" style="margin-top: 10%;margin-bottom: 15%;">
+  <div #swiperRef="" class="swiper-container1 mySwiper" style="margin-top: 10%;margin-bottom: 15%;">
     <div class="swiper-wrapper">
-      <div class="swiper-slide" >
-        <div style="max-width: 50%;">
-            <div class="cardimage" >
+      <div class="swiper-slide" style="margin: 0%;">
+        <div>
+            <div class="cardimage">
                <a href="./book before coffe gets cold.html" class="teaser-image" >
-                    <div class="image-wrapper" >
+                    <div class="image-wrapper">
                         <img src="./images/Before the coffee gets cold.jpg"
                     style="width:250px !important; height:250px !important ; " />
             
                                 </div>
                 </a>
             </div>
-            <div class="cardtext" >
+            <div class="cardtext" style="max-width: 70%; text-align: center;">
                 <h5 class="teaser-category h5" style=" ">
                     <a href="./book before coffe gets cold.html" style="color: red;">Book Preview</a>
                                                     </h5>
@@ -868,8 +886,8 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
         </div>
 
       </div>
-      <div class="swiper-slide" >
-        <div style="max-width: 50%;">
+      <div class="swiper-slide" style="margin: 0%;">
+        <div>
             <div class="cardimage">
                 <a href="./book whatever_at_peru.html" class="teaser-image" >
                     <div class="image-wrapper">
@@ -880,7 +898,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
                                 </div>
                 </a>
             </div>
-            <div class="cardtext"  >
+            <div class="cardtext"  style="max-width: 70%; text-align: center;">
                 <h5 class="teaser-category h5" style=" ">
                     <h5 class="teaser-category h5">
                         <a href="./book whatever_at_peru.html" style="color: red;">Book Preview</a>
@@ -895,8 +913,8 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
         </div>
 
       </div>
-      <div class="swiper-slide" >
-        <div style="max-width: 50%;">
+      <div class="swiper-slide" style="margin: 0%;">
+        <div>
             <div class="cardimage">
                 <a href="./book janice.html" class="teaser-image" >
                     <div class="image-wrapper">
@@ -906,7 +924,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
                                 </div>
                 </a>
             </div>
-            <div class="cardtext" >
+            <div class="cardtext" style="max-width: 70%; text-align: center;">
                 <h5 class="teaser-category h5" style="margin-top: 6% !important; ">
                     <a href="./book before coffe gets cold.html" style="color: red;">Book Preview</a>
                                                             <svg class="article-tag-icon" aria-label="Partner" viewBox="0 0 386 104.7">
@@ -922,7 +940,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
       </div>
       <div class="swiper-slide" >
-        <div style="max-width: 50%;">
+        <div>
             <div class="cardimage">
                 <a href="./book ed yong.html" class="teaser-image" >
                     <div class="image-wrapper">
@@ -932,7 +950,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
                                 </div>
                 </a>
             </div>
-            <div class="cardtext" >
+            <div class="cardtext" style="max-width: 70%; text-align: center;">
                 <h5 class="teaser-category h5" style="margin-top: 6% !important; ">
                     <a href="./book ed yong.html" style="color: red;">Book Preview</a>
                                                     </h5>
@@ -946,8 +964,8 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
         </div>
 
       </div>
-      <div class="swiper-slide" >
-        <div style="max-width: 50%;">
+      <div class="swiper-slide">
+        <div>
             <div class="cardimage">
                 <a href="./book stanish lem.html" class="teaser-image" >
                     <div class="image-wrapper">
@@ -957,7 +975,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
                                 </div>
                 </a>
             </div>
-            <div class="cardtext" >
+            <div class="cardtext" style="max-width: 70%; text-align: center;">
                 <h5 class="teaser-category h5" style="margin-top: 6% !important; ">
                     <a href="./book stanish lem.html" style="color: red;">Book Preview</a>
                                                     </h5>
@@ -971,8 +989,8 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
         </div>
 
       </div>
-      <div class="swiper-slide" >
-        <div style="max-width: 50%;">
+      <div class="swiper-slide">
+        <div>
             <div class="cardimage">
                 <a href="./book big bang of number.html" class="teaser-image" >
                     <div class="image-wrapper">
@@ -982,7 +1000,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
                                 </div>
                 </a>
             </div>
-            <div class="cardtext" >
+            <div class="cardtext" style="max-width: 70%; text-align: center;">
                 <h5 class="teaser-category h5" style="margin-top: 6% !important; ">
                     <a href="./book big bang of number.html" style="color: red;">Book Preview</a>
                                                     </h5>
@@ -996,6 +1014,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
         </div>
 
       </div>
+      
     
 
 
@@ -1807,7 +1826,7 @@ var ad_config = {"slots":[{"name":"Teads_inRead","path":"\/4408\/artnetnews\/Tea
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.mySwiper', {
-      slidesPerView: 3,
+      slidesPerView: 2,
       centeredSlides: true,
       spaceBetween: 30,
       pagination: {
@@ -1820,8 +1839,8 @@ var ad_config = {"slots":[{"name":"Teads_inRead","path":"\/4408\/artnetnews\/Tea
       },
     });
     var swiper = new Swiper('.mySwiper', {
-        slidesPerView: 3,
-        centeredSlides: true,
+        slidesPerView: 2.7,
+        centeredSlides: false,
         spaceBetween: 30,
         pagination: {
           el: '.swiper-pagination',
@@ -1872,8 +1891,8 @@ var ad_config = {"slots":[{"name":"Teads_inRead","path":"\/4408\/artnetnews\/Tea
   </script>
   <script>
     var swiper1 = new Swiper1(".mySwiper1", {
-      slidesPerView: 1,
-      spaceBetween: 10,
+      slidesPerView: 3,
+      spaceBetween: 30,
       pagination: {
         el: ".swiper1-pagination",
         clickable: true,
