@@ -243,19 +243,20 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
     .swiper-button-next{
         background-color: #000;
         color: white !important;
-        border-radius: 50%;
-    width: 100px;
-    height: 100px;
+        border-radius: 50% !important;
+    width: 2% !important;
+    height: 4% !important;
         margin-right: 45%;
         margin-top: 35% !important;
+     
     }
     
     .swiper-button-prev{
         background-color: #000;
         color: white !important;
-        border-radius: 50%;
-    width: 100px;
-    height: 100px;
+        border-radius: 50% !important;
+    width: 2% !important;
+    height: 4% !important;
         
         margin-left: 45%;
         margin-top: 35% !important;
@@ -266,12 +267,18 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
         margin-left: 10%;
                                                 
     }
+    .titlefont{
+        font-family: 'DM Serif Display', serif;
+font-family: 'Unbounded', cursive;
+    }
     .montserrat-32{font:32px/1.44 Montserrat,Verdana,sans-serif}.montserrat-30,.montserrat-32{letter-spacing:2.2px;text-transform:uppercase}.montserrat-30,.montserrat-30-lowercase{font:30px/1.4 Montserrat,Verdana,sans-serif}.montserrat-24{letter-spacing:2px;text-transform:uppercase}.montserrat-24,.montserrat-24-lowercase{font:24px/1.33 Montserrat,Verdana,sans-serif}.montserrat-20{font:20px/1.3 Montserrat,Verdana,sans-serif;letter-spacing:1.8px;text-transform:uppercase}.montserrat-18{font:18px/1.33 Montserrat,Verdana,sans-serif;letter-spacing:1.6px;text-transform:uppercase}.montserrat-18-lowercase{font:18px/1.61 Montserrat,Verdana,sans-serif}.montserrat-16{letter-spacing:1.5px;text-transform:uppercase}.montserrat-16,.montserrat-16-lowercase{font:16px/1.5 Montserrat,Verdana,sans-serif}.montserrat-14{letter-spacing:1.3px;text-transform:uppercase}.montserrat-14,.montserrat-14-lowercase{font:14px/1.57 Montserrat,Verdana,sans-serif}.montserrat-12-lowercase{font:12px/1.5 Montserrat,Verdana,sans-serif}.montserrat-10{font:10px/1.2 Montserrat,Verdana,sans-serif;letter-spacing:1px;text-transform:uppercase}
   </style>
+  <style> @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap'); </style>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link href="https://fonts.cdnfonts.com/css/georgia" rel="stylesheet">
-                
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Unbounded:wght@300&display=swap" rel="stylesheet">
 				</head>
 	
 		<body class="home blog wp-custom-logo " id="body">
@@ -377,12 +384,15 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 </div>
     <header id="header" class="header container" style="background: #000;width: 100%;">
         <div style="display: flex;flex-direction: row;justify-content: center;align-content: center;align-items: center;">
+            <div>
+                <h2 style="background-color: #000;color: white;font: 18px/1.33 Montserrat,Verdana,sans-serif;position: relative;left:-295%;font-size: 17px;">Menu</h2>
+            </div>
             <div  id="header_logo" style=" margin-left:20%;padding:0px;width: 25%;">
                 <a class="logo-link" href="/" rel="home" style="width:100% !important ; margin:0px; padding:0px;">
 				    <img src="./images/Hyperglot Review Logo.png" alt="" style="  margin-top: 9%; margin-bottom: 5%;" />
                 </a>
             </div>
-            <div style="margin-left:20%;" >
+            <div style="margin-left:20%; " >
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="40" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" style="margin-right:5px ;">
                     <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" style="fill: white;"/>
                   </svg>
@@ -410,7 +420,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
                     </div>
                    
                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="main-nav-collapse" >
+                    <div class="collapse navbar-collapse" id="main-nav-collapse" style="padding: 4px;">
                         <nav id="nav-main" class="nav-main nav navbar-nav" role="navigation" >
                             <ul class="list-inline list-text" >
 								<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1962144">
@@ -526,8 +536,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 	</li>
 	<li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1965614 menu-item-has-children">
 		<a href="#" target="_self" style="background-color: #000;color: white;font-size: 1.7rem;font: 18px/1.33 Montserrat,Verdana,sans-serif;"   >About us</a>
-			<ul class="list-unstyled">
-		</ul>
+			
 			</li>
             <!-- <li class=" menu-item menu-item-type-taxonomy menu-item-object-category menu-item-530432 menu-item-has-children">
                 <a href="./travel.html" target="_self"  > Follow Us</a>
@@ -590,7 +599,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
                 </div>
 
 
-<h1 class="font" style="text-align: left;margin-left: 10;  ">Art</h1>
+<h1 class="titlefont" style="text-align: left;margin-left: 10%;font-size: 7rem;font-family: cursive">ART</h1>
 
 
 
@@ -705,9 +714,425 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
             </div>
         </div>
 
+      </div>  
+      <div class="swiper-slide">
+        <div>
+            <div class="cardimage">
+                <a href="./Artist Indira Halder.html"  >
+                    <div class="image-wrapper" >
+                        <img src="./images/They Are - II, Acrylic on Canvas, 12 x 32 inch (1).jpg" style="width:100% !important ;height:450px">
+                       
+                            
+            
+                                </div>
+                </a>
+            </div>
+            <div class="cardtext">
+                <h5 class="teaser-category h5">
+                    <a href="#" style="color: red;">Women Artist </a>
+                                    </h5>
+<a href="./Artist Indira Halder.html" >
+    <h2 class="teaser-title h2">Indira Halder</h2>
+                    <p class="teaser-blurb" style="color: black;">Since 2020, billionaire Ronald Perelman has been unloading assets ranging from fine art to a private jet.</p>
+            </a>
+<p class="teaser-byline" style="color: grey;">
+
+            </div>
+        </div>
+
       </div>
-      
-      
+      <div class="swiper-slide">
+        <div>
+            <div class="cardimage">
+                <a href="./Artist Samir Saha.html" class="teaser-image" >
+                    <div class="image-wrapper">
+                        <img src="./images/Composition ( Mixmedia on paper).jpeg"
+                        style="width:100% !important ;height:450px " />
+            
+                                </div>
+                </a>
+            </div>
+            <div class="cardtext">
+              <h5 class="teaser-category h5" style=" ">
+							<a href="./Artist Samir Saha.html" style="color: red;" >Art</a>
+											</h>
+        <a href="./Artist Samir Saha.html" >
+			<h2 class="teaser-title h2">Sameer Saha</h2>
+							<p class="teaser-blurb" style="">The dealer will present the Abstract Expressionist artist at the ADAA Art Show.</p>
+					</a>
+		<p class="teaser-byline" style="color: grey;">
+
+            </div>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+        <div>
+            <div class="cardimage">
+                <a href="./Artist Dipankar Ray.html" class="teaser-image" >
+                    <div class="image-wrapper">
+                        <img src="./images/Mother Nature -33A (1).jpg"
+                        style="width:100% !important ;height:450px" />
+            
+                                </div>
+                </a>
+            </div>
+            <div class="cardtext">
+                <h5 class="teaser-category h5" style="">
+                    <a href="./Artist Dipankar Ray.html" style="color: red;" >Art</a>
+                                    </h5>
+<a href="./Artist Dipankar Ray.html" >
+    <h2 class="teaser-title h2">Dipankar Ray</h2>
+                    <p class="teaser-blurb" style="color: black;">The technology also can be used to help architects visualize the impact a new building might have on a cityscape.</p>
+            </a>
+<p class="teaser-byline" style="color: grey;">
+
+            </div>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+        <div>
+            <div class="cardimage">
+                <a href="./Artist chandan das.html" class="teaser-image" >
+                    <div class="image-wrapper">
+                        <img src="./images/Emotion of Myself - 01  (48x60) (1).JPG"
+                        style="width:100% !important ;height:450px " />
+            
+                                </div>
+                </a>
+            </div>
+            <div class="cardtext">
+                <h5 class="teaser-category h5" style=" ">
+                    <a href="./Artist chandan das.html" style="color: red;">Art</a>
+                                    </h5>
+<a href="./Artist chandan das.html" >
+    <h2 class="teaser-title h2">Chandan Das</h2>
+                    <p class="teaser-blurb" style="color: black;">The technology also can be used to help architects visualize the impact a new building might have on a cityscape.</p>
+            </a>
+<p class="teaser-byline" style="color: grey;">
+
+            </div>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+        <div>
+            <div class="cardimage" >
+                <a href="./Artist Amit Kumar Saha.html" class="teaser-image" >
+                    <div class="image-wrapper" >
+                        <img src="./images/Dil Garden Ho Gaya - On my way (1).jpg"
+                        Style="width:100% !important ;height:450px "/>
+            
+                                </div>
+                </a>
+            </div>
+            <div class="cardtext">
+                <div class="teaser-info" > 
+                    <h5 class="teaser-category h5">
+                                        <a href="./Artist Amit Kumar Saha.html" style="color: RED;" > Featured Artist</a>
+                                                        </h5>
+                    <a href="./Artist Amit Kumar Saha.html" >
+                        <h2 class="teaser-title h2">Amit Kumar Saha</h2>
+                    <p class="teaser-blurb" style="color: black;">Beeple Studios is a bet that the future of digital art passes through physical display.</p>
+                    <p class="teaser-byline" style="color: grey;">
+                        
+                                        <!--
+                     --><!--
+                     --><time datetime="2022-10-27T17:19:34-04:00" title="Oct 27, 2022 1:19 PM">,
+                                        10 hours ago
+                                    </time>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+        <div>
+            <div class="cardimage">
+                <a href="./Artist Kuntal Dutta.html" class="teaser-image" >
+                    <div class="image-wrapper">
+                        <img src="./images/town6.jpg_acrylic on canvas_36x48inc_AP rs 45000 (1) (1).jpg"
+                        style="width:100% !important ;height:450px" />
+            
+                                </div>
+                </a>
+            </div>
+            <div class="cardtext">
+                <h5 class="teaser-category h5" style=" ">
+                    <a href="./Artist Kuntal Dutta.html" style="color: red;">Spotlight</a>
+                                            <svg class="article-tag-icon" aria-label="Partner" viewBox="0 0 386 104.7">
+            </h5>
+<a href="./Artist Kuntal Dutta.html" >
+    <h2 class="teaser-title h2"> Kuntal Dutta</h2>
+                    <p class="teaser-blurb" style="color: black;">Now represented by Triple X, the artist is putting his technical and artistic skills to use in an expanding array of digital works.</p>
+            </a>
+<p class="teaser-byline" style="color: grey;">
+
+            </div>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+        <div>
+            <div class="cardimage">
+                <a href="./Artist Prolay Kundu.html" class="teaser-image" >
+                    <div class="image-wrapper">
+                        <img src="./images/A Girl.JPG"
+                        style="width:100% !important ;height:450px" />
+            
+                                </div>
+                </a>
+            </div>
+            <div class="cardtext">
+                <h5 class="teaser-category h5" style=" ">
+                    <a href="./Artist Prolay Kundu.html" style="color: red;"> Art</a>
+                                    </h5>
+<a href="#" >
+    <h2 class="teaser-title h2">Prolay Kundu</h2>
+                    <p class="teaser-blurb" style="color: black;">The remains of the ship were found in Vaxholm, where it sunk in 1658.</p>
+            </a>
+<p class="teaser-byline" style="color: grey;" style="color: grey;">
+
+            </div>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+        <div>
+            <div class="cardimage">
+               <a href="./Artist Soumen saha.html" class="teaser-image" >
+                    <div class="image-wrapper">
+                        <img src="./images/Tree.jpg" 
+                        style="width:100% !important ;height:450px " />
+            
+                                </div>
+                </a>
+            </div>
+            <div class="cardtext">
+                <h5 class="teaser-category h5" style="margin-top: 6% !important; ">
+                    <a href="./Artist Soumen saha.html" style="color: red;" >Art</a>
+                                    </h5>
+<a href="./Artist Soumen saha.html" >
+    <h2 class="teaser-title h2">Soumen Basu</h2>
+                    <p class="teaser-blurb" style="color: black;">Beeple Studios is a bet that the future of digital art passes through physical display.</p>
+            </a>
+
+            </div>
+        </div>
+
+      </div>  
+      <div class="swiper-slide">
+        <div>
+            <div class="cardimage">
+                <a href="./Artist Indira Halder.html"  >
+                    <div class="image-wrapper" >
+                        <img src="./images/They Are - II, Acrylic on Canvas, 12 x 32 inch (1).jpg" style="width:100% !important ;height:450px">
+                       
+                            
+            
+                                </div>
+                </a>
+            </div>
+            <div class="cardtext">
+                <h5 class="teaser-category h5">
+                    <a href="#" style="color: red;">Women Artist </a>
+                                    </h5>
+<a href="./Artist Indira Halder.html" >
+    <h2 class="teaser-title h2">Indira Halder</h2>
+                    <p class="teaser-blurb" style="color: black;">Since 2020, billionaire Ronald Perelman has been unloading assets ranging from fine art to a private jet.</p>
+            </a>
+<p class="teaser-byline" style="color: grey;">
+
+            </div>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+        <div>
+            <div class="cardimage">
+                <a href="./Artist Samir Saha.html" class="teaser-image" >
+                    <div class="image-wrapper">
+                        <img src="./images/Composition ( Mixmedia on paper).jpeg"
+                        style="width:100% !important ;height:450px " />
+            
+                                </div>
+                </a>
+            </div>
+            <div class="cardtext">
+              <h5 class="teaser-category h5" style=" ">
+							<a href="./Artist Samir Saha.html" style="color: red;" >Art</a>
+											</h>
+        <a href="./Artist Samir Saha.html" >
+			<h2 class="teaser-title h2">Sameer Saha</h2>
+							<p class="teaser-blurb" style="">The dealer will present the Abstract Expressionist artist at the ADAA Art Show.</p>
+					</a>
+		<p class="teaser-byline" style="color: grey;">
+
+            </div>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+        <div>
+            <div class="cardimage">
+                <a href="./Artist Dipankar Ray.html" class="teaser-image" >
+                    <div class="image-wrapper">
+                        <img src="./images/Mother Nature -33A (1).jpg"
+                        style="width:100% !important ;height:450px" />
+            
+                                </div>
+                </a>
+            </div>
+            <div class="cardtext">
+                <h5 class="teaser-category h5" style="">
+                    <a href="./Artist Dipankar Ray.html" style="color: red;" >Art</a>
+                                    </h5>
+<a href="./Artist Dipankar Ray.html" >
+    <h2 class="teaser-title h2">Dipankar Ray</h2>
+                    <p class="teaser-blurb" style="color: black;">The technology also can be used to help architects visualize the impact a new building might have on a cityscape.</p>
+            </a>
+<p class="teaser-byline" style="color: grey;">
+
+            </div>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+        <div>
+            <div class="cardimage">
+                <a href="./Artist chandan das.html" class="teaser-image" >
+                    <div class="image-wrapper">
+                        <img src="./images/Emotion of Myself - 01  (48x60) (1).JPG"
+                        style="width:100% !important ;height:450px " />
+            
+                                </div>
+                </a>
+            </div>
+            <div class="cardtext">
+                <h5 class="teaser-category h5" style=" ">
+                    <a href="./Artist chandan das.html" style="color: red;">Art</a>
+                                    </h5>
+<a href="./Artist chandan das.html" >
+    <h2 class="teaser-title h2">Chandan Das</h2>
+                    <p class="teaser-blurb" style="color: black;">The technology also can be used to help architects visualize the impact a new building might have on a cityscape.</p>
+            </a>
+<p class="teaser-byline" style="color: grey;">
+
+            </div>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+        <div>
+            <div class="cardimage" >
+                <a href="./Artist Amit Kumar Saha.html" class="teaser-image" >
+                    <div class="image-wrapper" >
+                        <img src="./images/Dil Garden Ho Gaya - On my way (1).jpg"
+                        Style="width:100% !important ;height:450px "/>
+            
+                                </div>
+                </a>
+            </div>
+            <div class="cardtext">
+                <div class="teaser-info" > 
+                    <h5 class="teaser-category h5">
+                                        <a href="./Artist Amit Kumar Saha.html" style="color: RED;" > Featured Artist</a>
+                                                        </h5>
+                    <a href="./Artist Amit Kumar Saha.html" >
+                        <h2 class="teaser-title h2">Amit Kumar Saha</h2>
+                    <p class="teaser-blurb" style="color: black;">Beeple Studios is a bet that the future of digital art passes through physical display.</p>
+                    <p class="teaser-byline" style="color: grey;">
+                        
+                                        <!--
+                     --><!--
+                     --><time datetime="2022-10-27T17:19:34-04:00" title="Oct 27, 2022 1:19 PM">,
+                                        10 hours ago
+                                    </time>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+        <div>
+            <div class="cardimage">
+                <a href="./Artist Kuntal Dutta.html" class="teaser-image" >
+                    <div class="image-wrapper">
+                        <img src="./images/town6.jpg_acrylic on canvas_36x48inc_AP rs 45000 (1) (1).jpg"
+                        style="width:100% !important ;height:450px" />
+            
+                                </div>
+                </a>
+            </div>
+            <div class="cardtext">
+                <h5 class="teaser-category h5" style=" ">
+                    <a href="./Artist Kuntal Dutta.html" style="color: red;">Spotlight</a>
+                                            <svg class="article-tag-icon" aria-label="Partner" viewBox="0 0 386 104.7">
+            </h5>
+<a href="./Artist Kuntal Dutta.html" >
+    <h2 class="teaser-title h2"> Kuntal Dutta</h2>
+                    <p class="teaser-blurb" style="color: black;">Now represented by Triple X, the artist is putting his technical and artistic skills to use in an expanding array of digital works.</p>
+            </a>
+<p class="teaser-byline" style="color: grey;">
+
+            </div>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+        <div>
+            <div class="cardimage">
+                <a href="./Artist Prolay Kundu.html" class="teaser-image" >
+                    <div class="image-wrapper">
+                        <img src="./images/A Girl.JPG"
+                        style="width:100% !important ;height:450px" />
+            
+                                </div>
+                </a>
+            </div>
+            <div class="cardtext">
+                <h5 class="teaser-category h5" style=" ">
+                    <a href="./Artist Prolay Kundu.html" style="color: red;"> Art</a>
+                                    </h5>
+<a href="#" >
+    <h2 class="teaser-title h2">Prolay Kundu</h2>
+                    <p class="teaser-blurb" style="color: black;">The remains of the ship were found in Vaxholm, where it sunk in 1658.</p>
+            </a>
+<p class="teaser-byline" style="color: grey;" style="color: grey;">
+
+            </div>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+        <div>
+            <div class="cardimage">
+               <a href="./Artist Soumen saha.html" class="teaser-image" >
+                    <div class="image-wrapper">
+                        <img src="./images/Tree.jpg" 
+                        style="width:100% !important ;height:450px " />
+            
+                                </div>
+                </a>
+            </div>
+            <div class="cardtext">
+                <h5 class="teaser-category h5" style="margin-top: 6% !important; ">
+                    <a href="./Artist Soumen saha.html" style="color: red;" >Art</a>
+                                    </h5>
+<a href="./Artist Soumen saha.html" >
+    <h2 class="teaser-title h2">Soumen Basu</h2>
+                    <p class="teaser-blurb" style="color: black;">Beeple Studios is a bet that the future of digital art passes through physical display.</p>
+            </a>
+
+            </div>
+        </div>
+
+      </div>  
       <div class="swiper-slide">
         <div>
             <div class="cardimage">
@@ -845,17 +1270,18 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
 
 
-
+  <h1 class="font" style="font-weight: bold;font-size: 22px;margin-top: 20% !important;">Heading</h1>
   <div style="margin-left: 10%;margin-right: 10%;webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font: 400 48px/1.17 EB Garamond,Georgia,Times New Roman,serif;
-  line-height: 1.5;font-size: 3.2rem;margin-top: 20% !important;margin-bottom: 3%;">
-  <h1 style="font-weight: bold;">Heading</h1>
+  line-height: 1.5;font-size: 3.2rem;margin-bottom: 3%;">
+
     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus natus consequuntur laborum autem, a velit veniam magni cupiditate quasi libero modi ipsa commodi explicabo rerum soluta optio animi iste. Similique aliquid ex, atque eius itaque vel quos hic debitis quas pariatur nihil est ducimus ipsum in et harum, quasi recusandae. Iste quaerat ut corporis, in et assumenda eius non minima magni error dolorum quia conse
   </div>
 
 
-  <h1 style="text-align: center;-webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;font: 400 58px/1.24 LouvreSerif,Georgia,Times New Roman,serif;text-transform: uppercase;width: calc(var(--column-unit) * 8 - var(--grid-gap));">Book Preview</h1>
+  <h1 class="titlefont" style="margin-top: 10%;text-align: left;margin-left: 10%;font-size: 7rem;font-family: cursive">BOOK PREVIEW</h1>
+
 
 
 
@@ -2001,8 +2427,8 @@ var ad_config = {"slots":[{"name":"Teads_inRead","path":"\/4408\/artnetnews\/Tea
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.mySwiper', {
-      slidesPerView: 2,
-      centeredSlides: true,
+      slidesPerView: 2.7,
+      centeredSlides: false,
       spaceBetween: 30,
       pagination: {
         el: '.swiper-pagination',
